@@ -11,17 +11,17 @@ const links = [
         path: "/services",
     },
     {
-        name: "A PROPOS",
+        name: "À  PROPOS",
         path: "/resume",
     },
     {
-        name: "PROJECTS",
+        name: "PROJETS",
         path: "/work",
     },
-    {
-        name: "CONTACT",
-        path: "/contact",
-    },
+    // {
+    //     name: "CONTACT",
+    //     path: "/contact",
+    // },
 ]
 const Nav = () => {
   const pathname = usePathname();
