@@ -12,13 +12,13 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projets =[
     {
         num: '01',
-        category: 'front-end',
+        category: 'Full-stack',
         title: 'Project 1',
         descrition:'Création d\'un site web de location de logements insolites',
-        stack:[{name:'HTML'}, {name:'CSS'}, {name:'JavaScript'}, {name:'PHP'}, {name:'MySQL'},{name:'Mangodb'}],
+        stack:[{name:'React'}, {name:'CSS'}, {name:'JavaScript'}, {name:'Tailwind'}, {name:'Next.js'},{name:'Mangodb'}],
         img: '/assets/assets/work/thumb1.png',
         live:'',
-        github:"",
+        github:"https://github.com/Seybou99/Atypik_house.git",
     },
     {
         num: '02',
@@ -50,6 +50,16 @@ const projets =[
         live:'',
         github:"",
     },
+    {
+        num: '05',
+        category: 'front-end',
+        title: 'Project 4',
+        descrition:'Création d\'un site web vitrine en WordPress',
+        stack:[{name:'HTML'}, {name:'CSS'}, {name:'Wordpress'}, {name:'PHP'}],
+        img: '/assets/assets/work/thumb3.png',
+        live:'https://www.subventions.com/',
+        github:"",
+    },
 ]
 const Work = () => {
     const [project, setProject] = useState(projets[0]);
@@ -64,7 +74,7 @@ const Work = () => {
                 <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
                     <div className="flex flex-col gap-[30px] h-[50%]">
                         <div className="text-8xl leading-none font-extrabold text-transparent text-outline">{project.num}</div>
-                        <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capatalize">{project.category} projet</h2>
+                        <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capatalize">{project.category} Projet</h2>
                         <p className="text-white/60">{project.descrition}</p>
                         <ul className="flex gap-4 ">
                             {project.stack.map((item,index)=> {
@@ -85,7 +95,7 @@ const Work = () => {
                                         <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
                                     </TooltipTrigger>
                                     <TooltipContent>
-                                        <p>live</p>
+                                        <p>Site</p>
                                     </TooltipContent>
                                 </Tooltip>
                              </TooltipProvider>

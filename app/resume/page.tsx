@@ -1,5 +1,5 @@
 "use client";
-import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs, FaWordpress } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 
 import Link from "next/link";
@@ -114,6 +114,7 @@ const skills = {
         { icon: <SiNextdotjs />, name: "Next.js" },
         { icon: <FaFigma />, name: "Figma" },
         { icon: <FaNodeJs />, name: "Node.js" },
+        { icon: <FaWordpress />, name: "Wordpress" },
     ]
 };
 
